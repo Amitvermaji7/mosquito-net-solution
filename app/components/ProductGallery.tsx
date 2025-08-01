@@ -98,11 +98,13 @@ const products = [
   }
 ];
 
+type Product = typeof products[number];
+
 export default function ProductGallery() {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleViewDetails = (product) => {
+  const handleViewDetails = (product: Product) => {
     setSelectedProduct(product);
     setIsModalOpen(true);
   };

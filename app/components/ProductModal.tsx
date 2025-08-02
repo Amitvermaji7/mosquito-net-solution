@@ -20,11 +20,11 @@ export default function ProductModal({ isOpen, onClose, product }: ProductModalP
 
   const handleWhatsApp = () => {
     const message = `Hi, I'm interested in ${product.title}. Can you provide more details and pricing?`;
-    window.open(`https://wa.me/917004369626?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/919321367767?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleCall = () => {
-    window.open('tel:+917004369626', '_self');
+    window.open('tel:+919321367767', '_self');
   };
 
   return (
